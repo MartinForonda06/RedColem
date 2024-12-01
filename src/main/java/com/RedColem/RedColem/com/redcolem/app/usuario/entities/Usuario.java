@@ -1,7 +1,10 @@
 package com.RedColem.RedColem.com.redcolem.app.usuario.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
 
@@ -47,12 +50,14 @@ public class Usuario {
     @Column(nullable = true)
     private Boolean activo;
 
-    @Column
-    private LocalDateTime ultimoAcceso;
+    //@Column
+    //private LocalDateTime ultimoAcceso;
 
-    @Column
-    private LocalDateTime fechaCreacion;
 
-    @Column
-    private LocalDateTime fechaModificacion;
+    //@Column
+    //private LocalDateTime fechaCreacion;
+
+    //@JsonIgnore
+    //@Column
+    //private LocalDateTime fechaModificacion;
 }

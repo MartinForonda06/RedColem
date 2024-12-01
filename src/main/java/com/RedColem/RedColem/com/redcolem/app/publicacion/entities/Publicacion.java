@@ -19,8 +19,8 @@ public class Publicacion {
     private String titulo;
     private String contenido;
 
-    @Column(name = "fecha_creacion")
-    private LocalDateTime fechaCreacion;
+    //@Column(name = "fecha_creacion")
+    //private LocalDateTime fechaCreacion;
 
     @ManyToOne
     @JoinColumn(name = "id_usuario")

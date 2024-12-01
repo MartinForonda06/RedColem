@@ -17,8 +17,8 @@ public class Comentarios {
     private Long idComentarios;
 
     private String contenido;
-    private LocalDateTime fechaCreacion;
-    private LocalDateTime fechaModificacion;
+    //private LocalDateTime fechaCreacion;
+    //private LocalDateTime fechaModificacion;
     private String urlImagen;
     private String urlVideo;
 

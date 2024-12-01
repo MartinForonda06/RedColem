@@ -16,7 +16,7 @@ public class PublicacionDTO {
     private Long idPublicacion;
     private String titulo;
     private String contenido;
-    private LocalDateTime fechaCreacion;
+    //private LocalDateTime fechaCreacion;
     private Long idUsuario;
     private Long idEmprendimiento;
     private String urlImagen;

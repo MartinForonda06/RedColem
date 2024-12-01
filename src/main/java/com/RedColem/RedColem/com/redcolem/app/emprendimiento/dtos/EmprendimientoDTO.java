@@ -15,8 +15,8 @@ public class EmprendimientoDTO {
 
     private Long idEmprendimiento;
     private String nombre;
-    private LocalDateTime fechaCreacion;
-    private LocalDateTime fechaModificacion;
+    //private LocalDateTime fechaCreacion;
+    //private LocalDateTime fechaModificacion;
     private String descripcion;
     private String objetivo;
     private String calle;

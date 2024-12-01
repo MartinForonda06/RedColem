@@ -31,7 +31,7 @@ public class UsuarioServiceImpl implements UsuarioService {
     @Override
     public UsuarioDTO findById(Integer id) {
         Usuario usuario = repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Usuario not found"));
+                .orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
         return mapper.map(usuario, UsuarioDTO.class);
     }
 

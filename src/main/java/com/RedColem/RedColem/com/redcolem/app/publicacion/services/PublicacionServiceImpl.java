@@ -48,7 +48,6 @@ public class PublicacionServiceImpl implements PublicacionService {
         Publicacion publicacion = publicacionRepository.findById(id).orElseThrow();
         publicacion.setTitulo(publicacionDTO.getTitulo());
         publicacion.setContenido(publicacionDTO.getContenido());
-        publicacion.setFechaCreacion(publicacionDTO.getFechaCreacion());
         publicacion.setUsuario(publicacionDTO.getIdUsuario());
         publicacion.setEmprendimiento(publicacionDTO.getIdEmprendimiento());
         publicacion.setUrlImagen(publicacionDTO.getUrlImagen());
