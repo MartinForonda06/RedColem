@@ -47,8 +47,6 @@ public class ComentariosServiceImpl implements com.RedColem.RedColem.com.redcole
     public ComentariosDTO actualizar(Long id, ComentariosDTO comentariosDTO) {
         Comentarios comentario = comentariosRepository.findById(id).orElseThrow();
         comentario.setContenido(comentariosDTO.getContenido());
-        comentario.setFechaCreacion(comentariosDTO.getFechaCreacion());
-        comentario.setFechaModificacion(comentariosDTO.getFechaModificacion());
         comentario.setUrlImagen(comentariosDTO.getUrlImagen());
         comentario.setUrlVideo(comentariosDTO.getUrlVideo());
         comentario = comentariosRepository.save(comentario);

@@ -1,5 +1,6 @@
 package com.RedColem.RedColem.com.redcolem.app.usuario.dtos;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -17,8 +18,9 @@ public class UsuarioDTO {
     private String biografia;
     private String sitioWeb;
     private Boolean activo;
-    private LocalDateTime ultimoAcceso;
-    private LocalDateTime fechaCreacion;
-    private LocalDateTime fechaModificacion;
+    //private LocalDateTime ultimoAcceso;
+    //private LocalDateTime fechaCreacion;
+    //private LocalDateTime fechaModificacion;
     private String ciudad;
+
 }

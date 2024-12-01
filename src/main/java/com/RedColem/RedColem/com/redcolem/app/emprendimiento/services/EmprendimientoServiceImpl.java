@@ -47,8 +47,6 @@ public class EmprendimientoServiceImpl implements EmprendimientoService {
     public EmprendimientoDTO actualizar(Long id, EmprendimientoDTO emprendimientoDTO) {
         Emprendimiento emprendimiento = emprendimientoRepository.findById(id).orElseThrow();
         emprendimiento.setNombre(emprendimientoDTO.getNombre());
-        emprendimiento.setFechaCreacion(emprendimientoDTO.getFechaCreacion());
-        emprendimiento.setFechaModificacion(emprendimientoDTO.getFechaModificacion());
         emprendimiento.setDescripcion(emprendimientoDTO.getDescripcion());
         emprendimiento.setObjetivo(emprendimientoDTO.getObjetivo());
         emprendimiento.setCalle(emprendimientoDTO.getCalle());
